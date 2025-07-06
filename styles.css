@@ -46,7 +46,7 @@ html, body {
     height: 10%;
 }
 .loadingtxt {
-    font-family: "Cantarell";
+    font-family: "Arial";
     font-size: 180%;
     color: #ffffff;
     position: absolute;
@@ -63,7 +63,7 @@ html, body {
     height: 70%;
 }
 .boxtitle {
-    font-family: "Cantarell";
+    font-family: "Arial";
     font-size: 300%;
     color: #ffffff;
     position: absolute;
@@ -86,7 +86,7 @@ html, body {
 
 /* *In-Game Styling */
 .mtxt { /* Main text, mtx, mtxt, whatever. */
-    font-family: "Cantarell";
+    font-family: "Arial";
     font-size: 200%;
     color: #ffffff;
     position: absolute;
@@ -164,7 +164,7 @@ html, body {
 }
 /* Option texts (still ingame) */
 .one-op { /* First option text */
-    font-family: "Cantarell";
+    font-family: "Arial";
     font-size: 170%;
     color: #ffffff;
     position: absolute;
@@ -174,7 +174,7 @@ html, body {
     text-align: center;
 }
 .two-op { /* Second option text */
-    font-family: "Cantarell";
+    font-family: "Arial";
     font-size: 170%;
     color: #ffffff;
     position: absolute;
@@ -184,7 +184,7 @@ html, body {
     text-align: center;
 }
 .thr-op { /* Third option text */
-    font-family: "Cantarell";
+    font-family: "Arial";
     font-size: 170%;
     color: #ffffff;
     position: absolute;
@@ -194,7 +194,7 @@ html, body {
     text-align: center;
 }
 .fou-op { /* Fourth option text */
-    font-family: "Cantarell";
+    font-family: "Arial";
     font-size: 170%;
     color: #ffffff;
     position: absolute;
@@ -205,7 +205,7 @@ html, body {
 }
 /* Ending screen styling (still ingame) */
 .emtxt {
-    font-family: "Cantarell";
+    font-family: "Arial";
     font-size: 280%;
     color: #ffffff;
     position: absolute;
@@ -215,7 +215,7 @@ html, body {
     text-align: center;
 }
 .edesc {
-    font-family: "Cantarell";
+    font-family: "Arial";
     font-size: 185%;
     color: #ffffff;
     position: absolute;
@@ -323,7 +323,7 @@ html, body {
     transition: all 0.2s ease;
 }
 .dow-txt {
-    font-family: "Cantarell";
+    font-family: "Arial";
     font-size: 130%;
     color: #ffffff;
     position: absolute;
@@ -333,7 +333,7 @@ html, body {
     text-align: left;
 }
 .imp-txt {
-    font-family: "Cantarell";
+    font-family: "Arial";
     font-size: 130%;
     color: #ffffff;
     position: absolute;
@@ -343,7 +343,7 @@ html, body {
     text-align: left;
 }
 .btm-txt {
-    font-family: "Cantarell";
+    font-family: "Arial";
     font-size: 150%;
     color: #ffffff;
     position: absolute;
@@ -368,7 +368,7 @@ html, body {
     height: 25%;
 }
 .endings-ttl {
-    font-family: "Cantarell";
+    font-family: "Arial";
     font-size: 250%;
     color: #ffffff;
     position: absolute;
@@ -382,7 +382,7 @@ html, body {
     width: auto;
 }
 .checkboxtxt {
-    font-family: "Cantarell";
+    font-family: "Arial";
     font-size: 2vw;
     color: #ffffff;
     text-align: left;
