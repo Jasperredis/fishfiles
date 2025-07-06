@@ -1,0 +1,23 @@
+{
+    "optcount": 3,
+    "mt": "You see a fish, flopping on the ground.",
+    "prev": "aaa",
+    "opts": {
+        "a": {
+            "desc": "1. Listen to the fish",
+            "result": "aab"
+        },
+        "b": {
+            "desc": "2. Square up with the fish",
+            "result": "aac"
+        },
+        "c": {
+            "desc": "3. Toss the fish into the stratosphere",
+            "result": "aad"
+        },
+        "d": {
+            "desc": "4. See more...",
+            "result": "!e-pnf"
+        }
+    }
+}

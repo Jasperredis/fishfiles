@@ -1,0 +1,81 @@
+<!-- Fishgame by jasperredis -->
+<!-- jasperredis: jris.straw.page -->
+<!-- Game: jasperredis.github.io/Fishgame -->
+<!-- Version 1.0, yyyy-mm-dd -->
+<!-- Check /LICENSE for license info. -->
+<!-- Title screen document. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Fishgame by jasperredis</title>
+    <link rel="icon" href="assets/main/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <!--* GLOBAL STATE -->
+        <!-- *Beta Warning -->
+        <img src="assets/main/warn.png" class="warn"> <!-- This renders over the checklist in endings. Sorry. -->
+    <!-- *TITLE SCREEN STATE -->
+        <!-- *Logo -->
+        <img src="assets/title/other/logo.png" class="STATE-TITLE logo" id="logo_img">
+        <!-- *Buttons -->
+        <img src="assets/title/opts/start.png" class="STATE-TITLE lsel start" onclick="switchState('game')">
+        <img src="assets/title/opts/saves.png" class="STATE-TITLE lsel saves" onclick="toggleSaveMan()">
+        <img src="assets/title/opts/endings.png" class="STATE-TITLE lsel ends" onclick="switchState('endings-ft')">
+        
+        <!-- *Save Manager -->
+        <img src="assets/main/box/box.png" class="STATE-TITLE-NY box saveman">
+        <img src="assets/main/box/x.png" class="STATE-TITLE-NY boxx saveman lsel" onclick="toggleSaveMan()">
+        <p class="STATE-TITLE-NY boxtitle saveman">Save Manager</p>
+        <img src="assets/title/saveman/opts/download.png" class="STATE-TITLE-NY dow-bt saveman lsel" onclick="downloadSave()"> <!-- Button to download save file -->
+        <img src="assets/title/saveman/opts/import.png" class="STATE-TITLE-NY imp-bt saveman lsel" onclick="importSave()"> <!-- Button to import a save file -->
+        <p class="STATE-TITLE-NY dow-txt saveman">This button will download a file version of your save.<br>
+        This file will be in pretty-print JSON.</p>
+        <p class="STATE-TITLE-NY imp-txt saveman">This button will allow you to import a save file..<br>
+        Please ensure that this IS a Fishgame by jasperredis<br>
+        save file. It should be a .json file.</p>
+        <p class="STATE-TITLE-NY btm-txt saveman">A Fisgame by jasperredis save file contains your
+            <br>completed endings and configurations.<br>
+            The save manager often does not work in awkward resolutions<br>or zoom levels.</p>
+        <p class="STATE-TITLE-NY loadingtxt loadsave">Working with save file. DO NOT START.</p>
+
+        <!-- Save creation notification -->
+        <img id="welcome" src="assets/main/welcome.png" class="STATE-TITLE-NY welcome">
+
+    <!-- *GAME STATE -->
+        <p id="mtx" class="STATE-GAME mtxt nor">Loading...</p>
+        <p id="one-op" class="STATE-GAME one-op nor">Loading...</p>
+        <p id="two-op" class="STATE-GAME two-op nor">Loading...</p>
+        <p id="thr-op" class="STATE-GAME thr-op nor">Loading...</p>
+        <p id="fou-op" class="STATE-GAME fou-op nor">Loading...</p>
+
+        <!--* Button options -->
+        <img src="assets/game/opts/1.png" class="STATE-GAME one-bt lsel nor" onclick="newpage('a')">
+        <img src="assets/game/opts/2.png" class="STATE-GAME two-bt lsel nor" onclick="newpage('b')">
+        <img src="assets/game/opts/3.png" class="STATE-GAME thr-bt lsel nor" onclick="newpage('c')">
+        <img src="assets/game/opts/4.png" class="STATE-GAME fou-bt lsel nor" onclick="newpage('d')">
+        <img src="assets/game/opts/bac.png" class="STATE-GAME bac-bt lsel nor" onclick="prevpage()">
+        <!-- <img src="assets/game/opts/src.png" class="STATE-GAME ttl-bt nor" onclick="showSearch()"> -->
+        <!--? Maybe make that thing above me and below me exist? -->
+        <!-- <input type="text" id="srch" class="STATE-GAME srch" placeholder="Input a page's internal name... (or type '!c' to cancel)" /> -->
+
+        <!--* Ending screen -->
+        <p id="emtx" class="STATE-GAME-NY emtxt end">Loading...</p>
+        <p id="edsc" class="STATE-GAME-NY edesc end">Loading...</p>
+        <img src="assets/game/endings/back.png" class="STATE-GAME-NY eback lsel end" onclick="fpage()">
+        <img src="assets/game/endings/endings.png" class="STATE-GAME-NY eendings lsel end" onclick="endingsfg()">
+        <img src="assets/game/endings/title.png" class="STATE-GAME-NY etitle lsel end" onclick="switchState('title')">
+    
+    <!--* ENDINGS LIST STATE -->
+        <img src="assets/endings/header.png" class="STATE-ENDINGS headr">
+        <img src="assets/endings/back.png" class="STATE-ENDINGS esback" onclick="endingBack()">
+        <p class="STATE-ENDINGS endings-ttl"><strong>Endings</strong></p>
+
+        <div class="STATE-ENDINGS" id="checklist"></div>
+
+</body>
+</html>

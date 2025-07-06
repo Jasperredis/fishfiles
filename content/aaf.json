@@ -1,0 +1,22 @@
+{
+    "mt": "I mean...do you want it to?",
+    "prev": "aae",
+    "opts": {
+        "a": {
+            "desc": "1. Uhm...sure?",
+            "result": "aag"
+        },
+        "b": {
+            "desc": "2. Absolutely not!",
+            "result": "aab"
+        },
+        "c": {
+            "desc": "3. Possibly.",
+            "result": "!e-pnf"
+        },
+        "d": {
+            "desc": "",
+            "result": "!e-pnf"
+        }
+    }
+}

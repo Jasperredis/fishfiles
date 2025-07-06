@@ -1,0 +1,403 @@
+/* Fishgame by jasperredis
+jasperredis: jris.straw.page
+Game: jasperredis.github.io/Fishgame
+Version 1.0, yyyy-mm-dd 
+Check /LICENSE for license info.
+Global styling file, used for every HTML document. */
+
+/* This CSS is horrible. Just like for JS, I am sorry. I will overhaul it. 
+The horros of the JS script peril in comparison to this terrifying CSS file. */
+
+body {
+    background-color: #29282f;
+}
+html, body {
+    overflow: hidden;
+    height: 100%;
+}
+/* Animations */
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+.spin {
+    animation: spin 1.2s linear infinite;
+}
+
+/* *Universal styling */
+.warn {
+    position: absolute;
+    bottom: 1%;             
+    right: 1%;            
+    height: 15%;
+}
+.lsel {
+    cursor: pointer;
+}
+.loadingcirc {
+    position: absolute;
+    bottom: 1%;               
+    left: 1%;            
+    transform: translate(-50%, -50%);  
+    height: 10%;
+}
+.loadingtxt {
+    font-family: "Cantarell";
+    font-size: 180%;
+    color: #ffffff;
+    position: absolute;
+    bottom: 1%;             
+    left: 8.5%;            
+    text-align: left;
+}
+/* Box styling (still universal) */
+.box {
+    position: absolute;
+    top: 50%;               
+    left: 50%;            
+    transform: translate(-50%, -50%);  
+    height: 70%;
+}
+.boxtitle {
+    font-family: "Cantarell";
+    font-size: 300%;
+    color: #ffffff;
+    position: absolute;
+    top: 18%;             
+    left: 50%;            
+    transform: translate(-50%, -50%);  
+    text-align: center;
+}
+.boxx {
+    position: absolute;
+    top: 24%;               
+    right: 29.5%;            
+    transform: translate(-50%, -50%);  
+    height: 9%;
+}
+.boxx:hover {
+    height: 9.5%;
+    transition: all 0.2s ease;
+}
+
+/* *In-Game Styling */
+.mtxt { /* Main text, mtx, mtxt, whatever. */
+    font-family: "Cantarell";
+    font-size: 200%;
+    color: #ffffff;
+    position: absolute;
+    top: 3%;             
+    left: 50%;            
+    transform: translate(-50%, -50%);  
+    text-align: center;
+}
+/* Buttons (still ingame */
+.one-bt { /* Class for the opt. 1 button */
+    position: absolute;
+    top: 95%;             
+    left: 41%;            
+    transform: translate(-50%, -50%);  
+    height: 8%
+}
+.two-bt { /* Class for the opt. 2 button */
+    position: absolute;
+    top: 95%;             
+    left: 47%;            
+    transform: translate(-50%, -50%);  
+    height: 8%;
+}
+.thr-bt { /* Class for the opt. 3 button */
+    position: absolute;
+    top: 95%;             
+    left: 53%;            
+    transform: translate(-50%, -50%);  
+    height: 8%;
+}
+.fou-bt { /* Class for the opt. 4 button */
+    position: absolute;
+    top: 95%;             
+    left: 59%;            
+    transform: translate(-50%, -50%);  
+    height: 8%;
+}
+.bac-bt { /* Class for the back button */
+    position: absolute;
+    top: 95%;             
+    left: 35%;            
+    transform: translate(-50%, -50%);  
+    height: 8%;
+}
+.ttl-bt { /* Class for the title button */
+    position: absolute;
+    top: 95%;             
+    left: 65%;            
+    transform: translate(-50%, -50%);  
+    height: 8%;
+}
+.one-bt:hover {
+    top: 94%; /* 94% find comment */
+    transition: all 0.2s ease;
+}
+.two-bt:hover {
+    top: 94%; /* 94% find comment */
+    transition: all 0.2s ease;
+}
+.thr-bt:hover { 
+    top: 94%; /* 94% find comment */
+    transition: all 0.2s ease;
+}
+.fou-bt:hover {
+    top: 94%; /* 94% find comment */
+    transition: all 0.2s ease;
+}
+.bac-bt:hover {
+    top: 94%; /* 94% find comment */
+    transition: all 0.2s ease;
+}
+.ttl-bt:hover {
+    top: 94%; /* 94% find comment */
+    transition: all 0.2s ease;
+}
+/* Option texts (still ingame) */
+.one-op { /* First option text */
+    font-family: "Cantarell";
+    font-size: 170%;
+    color: #ffffff;
+    position: absolute;
+    top: 20%;             
+    left: 50%;            
+    transform: translate(-50%, -50%);  
+    text-align: center;
+}
+.two-op { /* Second option text */
+    font-family: "Cantarell";
+    font-size: 170%;
+    color: #ffffff;
+    position: absolute;
+    top: 25%;             
+    left: 50%;            
+    transform: translate(-50%, -50%);  
+    text-align: center;
+}
+.thr-op { /* Third option text */
+    font-family: "Cantarell";
+    font-size: 170%;
+    color: #ffffff;
+    position: absolute;
+    top: 30%;             
+    left: 50%;            
+    transform: translate(-50%, -50%);  
+    text-align: center;
+}
+.fou-op { /* Fourth option text */
+    font-family: "Cantarell";
+    font-size: 170%;
+    color: #ffffff;
+    position: absolute;
+    top: 35%;             
+    left: 50%;            
+    transform: translate(-50%, -50%);  
+    text-align: center;
+}
+/* Ending screen styling (still ingame) */
+.emtxt {
+    font-family: "Cantarell";
+    font-size: 280%;
+    color: #ffffff;
+    position: absolute;
+    top: 3%;             
+    left: 50%;            
+    transform: translate(-50%, -50%);  
+    text-align: center;
+}
+.edesc {
+    font-family: "Cantarell";
+    font-size: 185%;
+    color: #ffffff;
+    position: absolute;
+    top: 30%;             
+    left: 50%;            
+    transform: translate(-50%, -50%);  
+    text-align: center;
+}
+.eback {
+    position: absolute;
+    top: 70%;             
+    left: 50%;            
+    transform: translate(-50%, -50%);  
+    height: 27%;
+}
+.eback:hover {
+    height: 29%;
+    transition: all 0.2s ease;
+}
+.eendings {
+    position: absolute;
+    top: 70%;             
+    left: 37%;            
+    transform: translate(-50%, -50%);  
+    height: 24%;
+}
+.eendings:hover {
+    height: 26%;
+    transition: all 0.2s ease;
+}
+.etitle {
+    position: absolute;
+    top: 70%;             
+    left: 63%;            
+    transform: translate(-50%, -50%);  
+    height: 24%;
+}
+.etitle:hover {
+    height: 26%;
+    transition: all 0.2s ease;
+}
+
+/* *Title screen styling */
+.logo {
+    position: absolute;
+    top: 30%;             
+    left: 50%;            
+    transform: translate(-50%, -50%);  
+    height: 30%;
+}
+.start {
+    position: absolute;
+    top: 50%;             
+    left: 50%;            
+    transform: translate(-50%, -50%);  
+    height: 10%;
+}
+.start:hover {
+    height: 10.5%;
+    transition: all 0.2s ease;
+}
+.saves {
+    position: absolute;
+    top: 61%;             
+    left: 50%;            
+    transform: translate(-50%, -50%);  
+    height: 10%;
+}
+.saves:hover {
+    height: 10.5%;
+    transition: all 0.2s ease;
+}
+.ends {
+    position: absolute;
+    top: 72%;             
+    left: 50%;            
+    transform: translate(-50%, -50%);  
+    height: 10%;
+}
+.ends:hover {
+    height: 10.5%;
+    transition: all 0.2s ease;
+}
+/* Save Manager (still title) */
+.dow-bt {
+    position: absolute;
+    top: 35%;             
+    left: 36.5%;            
+    transform: translate(-50%, -50%);  
+    height: 13%;
+}
+.dow-bt:hover {
+    height: 14%;
+    transition: all 0.2s ease;
+}
+.imp-bt {
+    position: absolute;
+    top: 55%;             
+    left: 36.5%;            
+    transform: translate(-50%, -50%);  
+    height: 13%;
+}
+.imp-bt:hover {
+    height: 14%;
+    transition: all 0.2s ease;
+}
+.dow-txt {
+    font-family: "Cantarell";
+    font-size: 130%;
+    color: #ffffff;
+    position: absolute;
+    top: 32%;             
+    left: 54%;            
+    transform: translate(-50%, -50%);  
+    text-align: left;
+}
+.imp-txt {
+    font-family: "Cantarell";
+    font-size: 130%;
+    color: #ffffff;
+    position: absolute;
+    top: 52%;             
+    left: 53.9%;            
+    transform: translate(-50%, -50%);  
+    text-align: left;
+}
+.btm-txt {
+    font-family: "Cantarell";
+    font-size: 150%;
+    color: #ffffff;
+    position: absolute;
+    top: 67%;             
+    left: 50%;            
+    transform: translate(-50%, -50%);  
+    text-align: center;
+}
+.welcome {
+    top: 1%;
+    left: 1%;
+    position: absolute;
+    height: 7%;
+}
+
+/* *Endings screen styling */
+.headr {
+    position: absolute;
+    top: 0%;             
+    left: 50%;            
+    transform: translate(-50%, -50%);  
+    height: 25%;
+}
+.endings-ttl {
+    font-family: "Cantarell";
+    font-size: 250%;
+    color: #ffffff;
+    position: absolute;
+    top: 0%;             
+    left: 50%;            
+    transform: translate(-50%, -50%);  
+    text-align: center;
+}
+.checkbox {
+    height: 8vh;
+    width: auto;
+}
+.checkboxtxt {
+    font-family: "Cantarell";
+    font-size: 2vw;
+    color: #ffffff;
+    text-align: left;
+    vertical-align: 1.2vw;
+}
+.esback {
+    height: 7%;
+    position: absolute;
+    top: 1%;
+    left: 1%
+}
+.esback:hover {
+    left: 0.6%;
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: all 0.2s ease;
+}
+/* Remember to overhaul this eventually! Add :active and :focus and :hover and...just be more animative. Use a global animation class. Use less ugly assets too. */

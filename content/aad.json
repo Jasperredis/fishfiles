@@ -1,0 +1,22 @@
+{
+    "mt": "You pick up the fish, and throw it into the air as hard as you can..",
+    "prev": "aaa",
+    "opts": {
+        "a": {
+            "desc": "1. Next",
+            "result": "aae"
+        },
+        "b": {
+            "desc": "2. That was boring!",
+            "result": "aai"
+        },
+        "c": {
+            "desc": "",
+            "result": "aad"
+        },
+        "d": {
+            "desc": "",
+            "result": "aad"
+        }
+    }
+}

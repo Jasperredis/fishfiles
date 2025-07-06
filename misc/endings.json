@@ -1,0 +1,14 @@
+{
+    "1": {
+        "int": "placeholder1",
+        "ext": "NONE"
+    },
+    "2": {
+        "int": "!aaa",
+        "ext": "Hesitance"
+    },
+    "3": {
+        "int": "!Zaa",
+        "ext": "!Zaa.json"
+    }
+}

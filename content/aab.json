@@ -1,0 +1,20 @@
+{
+    "mt": "What's the big problem?",
+    "prev": "aaf",
+    "opts": {
+        "a": {
+            "desc": "1. I hate fish!",
+            "result": "aag"
+        },
+        "desc": "2. ",
+            "result": "aab"
+        },
+        "c": {
+            "desc": "3. Possibly.",
+            "result": "!e-pnf"
+        },
+        "d": {
+            "desc": "",
+            "result": "!e-pnf"
+        }
+}

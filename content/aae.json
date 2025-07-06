@@ -1,0 +1,22 @@
+{
+    "mt": "Does it come down?",
+    "prev": "aad",
+    "opts": {
+        "a": {
+            "desc": "1. Aren't you supposed to decide that?",
+            "result": "aaf"
+        },
+        "b": {
+            "desc": "",
+            "result": "aae"
+        },
+        "c": {
+            "desc": "",
+            "result": "aae"
+        },
+        "d": {
+            "desc": "",
+            "result": "aae"
+        }
+    }
+}

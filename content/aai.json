@@ -1,0 +1,22 @@
+{
+    "mt": "What?",
+    "prev": "aad",
+    "opts": {
+        "a": {
+            "desc": "1. You heard me! Make it fun.",
+            "result": "!Zaa"
+        },
+        "b": {
+            "desc": "",
+            "result": "aad"
+        },
+        "c": {
+            "desc": "",
+            "result": "aad"
+        },
+        "d": {
+            "desc": "",
+            "result": "aad"
+        }
+    }
+}

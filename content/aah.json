@@ -1,0 +1,22 @@
+{
+    "mt": "Why? It's not like it's a difficult question or something.",
+    "prev": "aag",
+    "opts": {
+        "a": {
+            "desc": "1. Whatever.",
+            "result": "!aaa"
+        },
+        "b": {
+            "desc": "",
+            "result": "!e-pnf"
+        },
+        "c": {
+            "desc": "",
+            "result": "!e-pnf"
+        },
+        "d": {
+            "desc": "",
+            "result": "!e-pnf"
+        }
+    }
+}

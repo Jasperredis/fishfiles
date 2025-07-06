@@ -1,0 +1,22 @@
+{
+    "mt": "Why were you so hesitant to answer that?",
+    "prev": "aaf",
+    "opts": {
+        "a": {
+            "desc": "1. Maybe because it's weird to be asked if I want a fish to fall from the sky...?",
+            "result": "aah"
+        },
+        "b": {
+            "desc": "",
+            "result": "!e-pnf"
+        },
+        "c": {
+            "desc": "",
+            "result": "!e-pnf"
+        },
+        "d": {
+            "desc": "",
+            "result": "!e-pnf"
+        }
+    }
+}

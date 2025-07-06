@@ -1,0 +1,11 @@
+{
+    "file-ver": 1.0,
+    "settings": {
+        "theme": "dark"
+    },
+    "endings": {
+        "placeholder1": false,
+        "!aaa": false,
+        "!Zaa": false
+    }
+}
